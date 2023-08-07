@@ -1,0 +1,15 @@
+{
+    "id": "91b88630-8e0f-493a-b24c-309d0e50f288",
+    "generations": [
+        {
+            "id": "037890a8-50f4-48d2-996a-506455c78cba",
+            "text": " \"I am bad\""
+        }
+    ],
+    "prompt": "This is a spell check generator. \n--\nIncorrect sample: \"I are good!\"\nCorrect sample: \"I am good!\"\n--\nIncorrect sample: \"I have 22 years old\"\nCorrect sample: \"I am 22 years old\"\n--\nIncorrect sample: \"I don't can know\"\nCorrect sample: \"I don't know\"\n---\nIncorrect sample: \"I are bad\"\nCorrect sample:",
+    "meta": {
+        "api_version": {
+            "version": "1"
+        }
+    }
+}

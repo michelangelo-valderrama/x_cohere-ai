@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ButtonSubmit from "../components/ButtonSubmit.jsx";
+---
+
+<Layout title="home">
+    <main class="container max-w-lg mx-auto mt-10 flex flex-col">
+        <header class="py-4">
+            <h1 class="text-3xl font-bold">fix my english! 🇬🇧</h1>
+        </header>
+        <label
+            for="message"
+            class="block mb-2 text-sm font-medium dark:text-gray-400"
+            >Put your english to fix:</label
+        >
+        <textarea
+            id="message"
+            rows="4"
+            class="block p-2.5 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder='Try with: "I cn pud here any text that i want, that it will be fixed easili by the inteligence artificial"'
+        >
+        </textarea>
+        <ButtonSubmit client:visible />
+        <div
+            class="p-4 mt-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
+            role="alert"
+            id="response"
+        >
+			>>> response...
+        </div>
+    </main>
+</Layout>
